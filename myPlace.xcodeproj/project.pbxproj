@@ -15,6 +15,8 @@
 		07BA211719E532F500B5DDA0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07BA211619E532F500B5DDA0 /* Images.xcassets */; };
 		07BA211A19E532F500B5DDA0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07BA211819E532F500B5DDA0 /* LaunchScreen.xib */; };
 		07BA212619E532F600B5DDA0 /* myPlaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07BA212519E532F600B5DDA0 /* myPlaceTests.m */; };
+		07BA213619E539A300B5DDA0 /* APPUIConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 07BA213519E539A300B5DDA0 /* APPUIConstant.m */; };
+		07BA213919E53A8D00B5DDA0 /* MPAppSettingConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 07BA213819E53A8D00B5DDA0 /* MPAppSettingConstant.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,10 @@
 		07BA211F19E532F600B5DDA0 /* myPlaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myPlaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07BA212419E532F600B5DDA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07BA212519E532F600B5DDA0 /* myPlaceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myPlaceTests.m; sourceTree = "<group>"; };
+		07BA213419E539A300B5DDA0 /* APPUIConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPUIConstant.h; sourceTree = "<group>"; };
+		07BA213519E539A300B5DDA0 /* APPUIConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPUIConstant.m; sourceTree = "<group>"; };
+		07BA213719E53A8D00B5DDA0 /* MPAppSettingConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPAppSettingConstant.h; sourceTree = "<group>"; };
+		07BA213819E53A8D00B5DDA0 /* MPAppSettingConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPAppSettingConstant.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,8 @@
 		07BA210519E532F500B5DDA0 /* myPlace */ = {
 			isa = PBXGroup;
 			children = (
+				07BA213319E5399400B5DDA0 /* utility */,
+				07BA213019E533C700B5DDA0 /* ExternalLibrary */,
 				07BA210A19E532F500B5DDA0 /* AppDelegate.h */,
 				07BA210B19E532F500B5DDA0 /* AppDelegate.m */,
 				07BA211019E532F500B5DDA0 /* ViewController.h */,
@@ -120,6 +128,24 @@
 				07BA212419E532F600B5DDA0 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		07BA213019E533C700B5DDA0 /* ExternalLibrary */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ExternalLibrary;
+			sourceTree = "<group>";
+		};
+		07BA213319E5399400B5DDA0 /* utility */ = {
+			isa = PBXGroup;
+			children = (
+				07BA213419E539A300B5DDA0 /* APPUIConstant.h */,
+				07BA213519E539A300B5DDA0 /* APPUIConstant.m */,
+				07BA213719E53A8D00B5DDA0 /* MPAppSettingConstant.h */,
+				07BA213819E53A8D00B5DDA0 /* MPAppSettingConstant.m */,
+			);
+			path = utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +192,7 @@
 		07BA20FB19E532F500B5DDA0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = MP;
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Lim Daehyun";
 				TargetAttributes = {
@@ -225,7 +252,9 @@
 				07BA210C19E532F500B5DDA0 /* AppDelegate.m in Sources */,
 				07BA210919E532F500B5DDA0 /* main.m in Sources */,
 				07BA211219E532F500B5DDA0 /* ViewController.m in Sources */,
+				07BA213619E539A300B5DDA0 /* APPUIConstant.m in Sources */,
 				07BA210F19E532F500B5DDA0 /* myPlace.xcdatamodeld in Sources */,
+				07BA213919E53A8D00B5DDA0 /* MPAppSettingConstant.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
